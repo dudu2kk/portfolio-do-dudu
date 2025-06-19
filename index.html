@@ -1,96 +1,98 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfólio de Dudu</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      background: #f0f0f0;
-      color: #333;
-    }
-    header {
-      background-color: #2e86de;
-      color: white;
-      padding: 30px 0;
-      text-align: center;
-    }
-    main {
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 20px;
-    }
-    section {
-      margin-bottom: 40px;
-    }
-    h2 {
-      color: #2e86de;
-    }
-    .projeto {
-      background: white;
-      padding: 15px;
-      border-radius: 8px;
-      margin-bottom: 20px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    }
-    a {
-      color: #2e86de;
-      text-decoration: none;
-    }
-    footer {
-      text-align: center;
-      padding: 20px;
-      background: #ddd;
-    }
-  </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portfólio do Dudu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #f0f0f0;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        header p {
+            font-size: 1.2em;
+            color: #555;
+        }
+        section.habilidades {
+            margin-bottom: 40px;
+        }
+        section.habilidades h2 {
+            border-bottom: 2px solid #333;
+            padding-bottom: 5px;
+        }
+        ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        ul li {
+            background: white;
+            margin: 10px 0;
+            padding: 10px 15px;
+            border-radius: 6px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        section.projetos h2 {
+            border-bottom: 2px solid #333;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+        }
+        .imagens-projetos {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+        }
+        .imagens-projetos img {
+            width: 30%;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+            object-fit: cover;
+            height: 150px;
+        }
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            color: #777;
+            font-size: 0.9em;
+        }
+    </style>
 </head>
 <body>
+    <header>
+        <h1>Dudu</h1>
+        <p>Estou aprendendo a programar</p>
+    </header>
 
-  <header>
-    <h1>Dudu Gonçalves</h1>
-    <p>Desenvolvedor Front-End em formação</p>
-  </header>
-
-  <main>
-    <section>
-      <h2>Sobre mim</h2>
-      <p>Sou um estudante apaixonado por tecnologia e programação. Estou aprendendo HTML, CSS e JavaScript com os cursos da Alura e desenvolvendo meus primeiros projetos.</p>
+    <section class="habilidades">
+        <h2>Habilidades</h2>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+        </ul>
     </section>
 
-    <section>
-      <h2>Meus Projetos</h2>
-
-      <div class="projeto">
-        <h3>Projeto 1: Página de Portfólio</h3>
-        <p>Meu primeiro projeto, onde criei esta página usando HTML e CSS.</p>
-        <a href="#">Ver projeto</a>
-      </div>
-
-      <div class="projeto">
-        <h3>Projeto 2: Calculadora</h3>
-        <p>Uma calculadora simples feita com JavaScript para treinar lógica.</p>
-        <a href="#">Ver projeto</a>
-      </div>
-
-      <div class="projeto">
-        <h3>Projeto 3: Site de Receitas</h3>
-        <p>Um site com receitas simples, usando listas, imagens e links.</p>
-        <a href="#">Ver projeto</a>
-      </div>
+    <section class="projetos">
+        <h2>Meus Projetos</h2>
+        <div class="imagens-projetos">
+            <img src="https://via.placeholder.com/300x150?text=Projeto+1" alt="Projeto 1" />
+            <img src="https://via.placeholder.com/300x150?text=Projeto+2" alt="Projeto 2" />
+            <img src="https://via.placeholder.com/300x150?text=Projeto+3" alt="Projeto 3" />
+        </div>
     </section>
 
-    <section>
-      <h2>Contato</h2>
-      <p>Email: dudu@email.com</p>
-      <p>GitHub: <a href="https://github.com/seu-usuario" target="_blank">github.com/seu-usuario</a></p>
-    </section>
-  </main>
-
-  <footer>
-    <p>&copy; 2025 - Dudu Gonçalves</p>
-  </footer>
-
+    <footer>
+        &copy; 2025 Dudu - Todos os direitos reservados
+    </footer>
 </body>
 </html>
